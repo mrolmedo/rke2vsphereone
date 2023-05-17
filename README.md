@@ -31,8 +31,8 @@ nodepools:
   # hostsystem: ""
   memorySize: '2048'            # vSphere size of memory for docker VM (in MB)
   network:                      # vSphere network where the virtual machine will be attached
-    - /rancherdc/network/VM Network
-  #  - /rancherdc/network/VM Network_01
+    - /datacentername/network/VM Network
+  # - /datacentername//network/VM Network_01
   pool: "path-to-resources"     # vSphere resource pool for docker VM
   sshPort: '22'                 # If using a non-B2D image you can specify the ssh port
   sshUserGroup: staff           # If using a non-B2D image the uploaded keys will need chown'ed, defaults to staff e.g. docker:staf
