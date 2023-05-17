@@ -1,0 +1,24 @@
+questions:
+- variable: cluster.name
+  description: "Specify the name of the cluster"
+  label: "Cluster Name"
+  required: true
+  type: string
+  group: "General"
+- variable: cloudCredentialSecretName
+  description: "CloudCredentialName for provisioning cluster"
+  label: "CloudCredential Name"
+  type: cloudcredential
+  group: "Nodepools"
+- variable: nodepools.count
+  description: "Specify node count"
+  type: int
+  required: true
+  label: "Node count"
+  group: "Nodepools"
+#- variable: monitoring.enabled
+#  default: false
+#  label: "Enable monitoring"
+#  description: "Enable monitoring"
+#  type: boolean
+#  group: monitoring
