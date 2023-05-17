@@ -7,7 +7,7 @@ This template creates a new cluster one single Machine Pool with 3 roles: worker
 ```
 cloudprovider: vsphere
 cloudCredentialSecretName:
-kubernetesVersion: v1.23.17+rke2r1
+kubernetesVersion: kubernetes_version+rke2
 # Specify nodepool options. Can add multiple node groups, specify etcd, controlplane and worker roles.
 nodepools:
 - etcd: true
