@@ -2,6 +2,6 @@ annotations:
   catalog.cattle.io/namespace: fleet-default
   catalog.cattle.io/type: cluster-template
 apiVersion: v1
-description: Vphere Cluster one node all roles template for rke2
+description: Vsphere Cluster one node all roles template for rke2
 name: cluster-template
 version: 0.0.1
