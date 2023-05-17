@@ -1,7 +1,7 @@
 # 
 
-This project contains rke2 cluster template helm chart, which can be applied with values.yaml as configurations to create clusters.
-This template creates a new cluster one single node with 3 roles: worker, control-plane and etcd.
+This project contains rke2 cluster template helm chart for Vsphere environment, which can be applied with values.yaml as configurations to create clusters.
+This template creates a new cluster one single Machine Pool with 3 roles: worker, control-plane and etcd.
 
 ## Values example
 ```
