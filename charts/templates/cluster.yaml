@@ -4,11 +4,11 @@ kind: Cluster
 #metadata:
 # {{- if .Values.cluster.labels }}
 #  labels:
-#{{ toYaml .Values.cluster.labels | indent 4 }}
+# {{ toYaml .Values.cluster.labels | indent 4 }}
 #  {{- end }}
 #  {{- if .Values.cluster.annotations }}
 #  annotations:
-#{{ toYaml .Values.cluster.annotations | indent 4 }}
+# {{ toYaml .Values.cluster.annotations | indent 4 }}
 #  {{- end }}
 metadata:
   name: {{ .Values.cluster.name }}
@@ -121,7 +121,7 @@ spec:
         # timeout: 0
       workerConcurrency: "10%"
       controlPlaneConcurrency: "10%"
-#{{- if .Values.agentEnvs }}
+# {{- if .Values.agentEnvs }}
 #  agentEnvVars:
 # {{ toYaml .Values.agentEnvs | indent 4 }}
-#{{- end }}
+# {{- end }}
