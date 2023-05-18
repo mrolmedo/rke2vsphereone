@@ -1,7 +1,7 @@
 # 
 
-This project contains rke2 cluster template helm chart for Vsphere environment, which can be applied with values.yaml as configurations to create clusters.
-This template creates a new cluster one single Machine Pool with 3 roles: worker, control-plane and etcd.
+This project contains a rke2 cluster template helm chart for the Vsphere environment, which can be applied with values.yaml as configurations to create clusters.
+This template creates a new cluster, one single Machine Pool with three roles: worker, control-plane, and etcd. The CNI is cilium. Modify the cluster.yaml chart to select a different one.
 
 ## Values example
 ```
