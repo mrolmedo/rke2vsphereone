@@ -3,7 +3,7 @@
 apiVersion: rke-machine-config.cattle.io/v1
 kind: VmwarevsphereConfig
 metadata:
-  name: {{ $nodepool.name }}
+  name: {{ $nodepool.name }}-{{$index}}-{{ $.Values.cluster.name }}
   namespace: fleet-default
 common:
 {{- if $nodepool.labels }}
