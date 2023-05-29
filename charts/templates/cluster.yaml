@@ -28,10 +28,10 @@ spec:
       etcdRole: {{ $nodepool.etcd }}
       workerRole: {{ $nodepool.worker }}
       quantity: {{ $nodepool.quantity }}
-      name: {{ $nodepool.name }}
+      name: {{ $nodepool.name }}-{{$index}}-{{ $.Values.cluster.name }}
       machineConfigRef:
         kind: VmwarevsphereConfig
-        name: {{ $nodepool.name }}
+        name: {{ $nodepool.name }}-{{$index}}-{{ $.Values.cluster.name }}
       paused: false
       displayName: {{ $nodepool.displayName }}
     {{- end }}  
