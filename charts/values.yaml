@@ -11,7 +11,7 @@ nodepools:
   paused: false
   # specify displayName
   displayName: "Master Pool 1"
-  name: "nodepool-1-name"
+  name: "nodepool"
   cloneFrom: "/datacentername/vm/templates-folder-path/ubuntu-22.04-cloudimg" ## # If you choose creation type clone a name of what you want to clone is required
   cpuCount: '2'
   creationType: "vm"            #Creation type when creating a new virtual machine. Supported values: vm, template, library, legacy'
