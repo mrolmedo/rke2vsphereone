@@ -17,11 +17,11 @@ nodepools:
   # Pause node pool
   paused: false
   # specify displayName
-  displayName: "Master Pool 1"
-  name: "nodepool-1-name"
+  displayName: "Master Pool 1" 
+  name: "nodepool-1-name"       #specify nodepool name
   cloneFrom: "/datacentername/vm/templates-folder-path/ubuntu-22.04-cloudimg" ## # If you choose creation type clone a name of what you want to clone is required
   cpuCount: '2'
-  creationType: "template"            #Creation type when creating a new virtual machine. Supported values: vm, template, library, legacy'
+  creationType: "template"      #Creation type when creating a new virtual machine. Supported values: vm, template, library, legacy'
   vcenter: "vcentername"        # vSphere IP/hostname for vCenter
   datacenter: "datacenter"      # vSphere datastore for virtual machine
   datastore: "datastorepath"    # vSphere datastore for virtual machine
