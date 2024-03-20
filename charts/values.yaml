@@ -23,9 +23,6 @@ nodepools:
   folder: "folderpath"          # vSphere folder for the docker VM. This folder must already exist in the datacenter
   # hostsystem: ""
   memorySize: '2048'            # vSphere size of memory for docker VM (in MB)
-  network:                      # vSphere network where the virtual machine will be attached
-    - /datastore/network/VM Network
-    - /datastore/network/VM Network_01
   pool: "path-to-resources"     # vSphere resource pool for docker VM
   sshPort: '22'                 # If using a non-B2D image you can specify the ssh port
   sshUser: docker               #
